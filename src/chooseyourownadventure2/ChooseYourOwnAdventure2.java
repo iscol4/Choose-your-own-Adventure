@@ -1,14 +1,14 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Isaac Collier
+March 11 2020
+This program uses nested if statements to create a choose your own adventure game
  */
 
 package chooseyourownadventure2;
 
 /**
  *
- * @author iscol4541
+ * This class is teaching me about choose your own adventure games and how to make them.
  */
 import java.util.Scanner;
 public class ChooseYourOwnAdventure2 {
@@ -17,8 +17,11 @@ public class ChooseYourOwnAdventure2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-     String decision1, decision2, decision3, decision4, decision5, decision6,decision7,decision8;
+  //declares variables:
+        String decision1, decision2, decision3, decision4, decision5, decision6,decision7,decision8;
               Scanner keyedInput = new Scanner (System.in);
+           
+              //starts choose your own adventure and prompts user to input "yes" or "no"
               System.out.println("Its halloween night and the big house at the end of the street's big steel gates are open... Do you go and get candy?");
     decision1 = keyedInput.nextLine();
      if (decision1.equals ("yes"))
@@ -33,11 +36,13 @@ public class ChooseYourOwnAdventure2 {
               {
         System.out.println("You go trick-or-treating at the other houses and get a decent stash of candy but the houses gates never opened again and you never find out what happened to it on Halloween night...");
              }
+         
          decision3 = keyedInput.nextLine();
          if (decision3.equals ("Basement")||decision3.equals("The basement")||decision3.equals("basement"))
          {
              System.out.println("You see a group of ghosts, witches, werewolves and vampires. They capture you and put you in their stew. You died.");
          }
+         
          else if (decision3.equals ("Upstairs")||decision3.equals ("upstairs"))
          {
              System.out.println("You go upstairs along creaky wooden floorboards and encouter a vampire. Do you fight back, run, or try to talk to it?");
@@ -63,6 +68,7 @@ public class ChooseYourOwnAdventure2 {
          {
              System.out.println("You go to the kitchen and find a slice of garlic bread. Do you take it with you?");
          }
+         
          decision5 = keyedInput.nextLine();
          if (decision5.equals("yes"))
                  {
